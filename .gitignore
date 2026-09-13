@@ -1,0 +1,12 @@
+# LaTeX generated files
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+
+# Compiled PDF
+card.pdf
+
+# macOS metadata
+.DS_Store
