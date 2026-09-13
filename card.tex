@@ -4,39 +4,45 @@
 \documentclass{article}
 \usepackage{graphicx}
 \usepackage{multicol}
-%\usepackage{xltxtra}
-%\setromanfont[Mapping=tex-text]{Gill Sans}
 
 \pagestyle{empty}
-\setlength\parindent{0pt}
-% \usepackage[paperwidth=3.5in, 
-%     paperheight=2in,
-%     left=0.2in,
-%     right=0.2in,
-%     top=0.1in,
-%     bottom=0.05in]{geometry}
+\setlength{\parindent}{0pt}
 
+% Business card size
 \setlength{\paperwidth}{3.5in}
 \setlength{\paperheight}{2in}
+
+% Usable area inside card
 \setlength{\textwidth}{3.1in}
-\setlength{\textheight}{1.85in}
+\setlength{\textheight}{1.7in}
 \setlength{\oddsidemargin}{-0.8in}
-\setlength{\topmargin}{-0.9in}
+\setlength{\topmargin}{-0.92in}
 
 \begin{document}
-\centering \includegraphics[width=.25\linewidth]{logo.png}\\[5pt]
-\parbox{2in}{\Large \centering Malak Khalil\\[1pt]
-\normalsize Master Student}
 
-\vfill
+\centering
+
+% Avatar
+\includegraphics[width=.17\linewidth]{logo.png}\\[-1pt]
+
+% Name and title
+{\large Malak Khalil}\\[-1pt]
+{\small Master Student}
+
+\vspace{5pt}
+
+% Contact information
+\footnotesize
+\begin{minipage}[t]{0.47\textwidth}
 \raggedright
-\begin{multicols}{2}
 http://malak.khalil\\
 me@malak.khalil
-
-\columnbreak
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.47\textwidth}
 \raggedleft
 @malakkhalil\\
-+33 7 59 75 90 51 %
-\end{multicols}%
++33 7 59 75 90 51
+\end{minipage}
+
 \end{document}
